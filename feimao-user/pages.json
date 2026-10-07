@@ -1,0 +1,526 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uni_modules/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [{
+		"path": "pages/index/index",
+		"style": {
+			"navigationBarTitleText": "",
+			"navigationStyle": "custom"
+		}
+	}, {
+		"path": "pages/index/order",
+		"style": {
+			"navigationBarTitleText": "订单",
+			"enablePullDownRefresh": false
+		}
+
+	}, {
+		"path": "pages/index/word",
+		"style": {
+			"navigationBarTitleText": "",
+			"enablePullDownRefresh": false,
+			"navigationStyle": "custom"
+		}
+
+	}    ,{
+            "path" : "pages/login/login",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "电动车租赁",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/IndexChild/MapChe",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "地图找车",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/IndexChild/ZaiXianGC",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "在线购车",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/IndexChild/ZuChe",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "快速租车",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/IndexChild/WeiXiuFW",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "维修服务",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/IndexChild/QianDao",
+            "style" :
+            {
+                "navigationBarTitleText": "签到",
+                "enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+            }
+
+        }
+        ,{
+            "path" : "pages/IndexChild/XQ",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+            }
+            
+        }
+        ,{
+            "path" : "pages/IndexChild/ZuCheXQ",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "详情",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/IndexChild/weixiuTiJiao",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "提交订单",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/success/successTiJiao",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "支付成功",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+		,{
+		    "path" : "pages/success/successSJ",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "上架成功",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+        ,{
+            "path" : "pages/IndexChild/goumaiTiJiao",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "提交订单",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/IndexChild/seleteDZ",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "选择地址",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/IndexChild/lzTiJIao",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "提交订单",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/IndexChild/SMRZ",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "实名认证",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/success/successSMRZ",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/IndexChild/integralMX",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "积分明细",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/OrderChild/OrderXQ",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "详情",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/OrderChild/OrderPlay",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "支付页",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/OrderChild/OrderHuanChe",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "还车",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/success/successHuanChe",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/success/successPlayCG",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "支付成功",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+		  ,{
+		            "path" : "pages/success/successPlayCGSm",
+		            "style" :                                                                                    
+		            {
+		                "navigationBarTitleText": "支付成功",
+		                "enablePullDownRefresh": false
+		            }
+		            
+		        }
+        ,{
+            "path" : "pages/WordChild/shezhi",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "个人资料",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/WordChild/YHJ",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的优惠券",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/WordChild/YuanGongRZ",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "员工认证",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/success/successYuanG",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "提交成功",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/WordChild/GYWM",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "关于我们",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/WordChild/DiZhi",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的地址",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/WordChild/AllDizhi",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "新增地址",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/WordChild/GuZhang",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "故障上报",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/login/YH",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "用户协议",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/login/YS",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "隐私政策",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+		,{
+		    "path" : "pages/login/SQ",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "投保授权书",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+        ,{
+            "path" : "pages/IndexChild/MenDianList",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "门店列表",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/success/successGuz",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "故障提交",
+                "enablePullDownRefresh": false
+            }
+            
+        },
+        {
+        	"path" : "pages/erkaiPages/RuZhu",
+        	"style" : 
+        	{
+        		"navigationBarTitleText" : "",
+				"navigationStyle": "custom"
+        	}
+        },
+        {
+        	"path" : "pages/erkaiPages/JDlogin",
+        	"style" : 
+        	{
+        		"navigationBarTitleText" : "",
+				"navigationStyle": "custom"
+        	}
+        },
+        {
+        	"path" : "pages/erkaiPages/JDindex",
+        	"style" : 
+        	{
+        		"navigationBarTitleText" : "",
+				"navigationStyle": "custom"
+        	}
+        },
+        {
+        	"path" : "pages/erkaiPages/JDtixianjilu",
+        	"style" : 
+        	{
+        		"navigationBarTitleText" : "提现记录"
+        	}
+        },
+        {
+        	"path" : "pages/erkaiPages/JDcode",
+        	"style" : 
+        	{
+        		"navigationBarTitleText" : "酒店码"
+        	}
+        },
+        {
+        	"path" : "pages/erkaiPages/JDtixian",
+        	"style" : 
+        	{
+        		"navigationBarTitleText" : "提现"
+        	}
+        },
+        {
+        	"path" : "pages/erkaiPages/MneDian",
+        	"style" : 
+        	{
+        		"navigationBarTitleText" : "",
+				"navigationStyle": "custom"
+        	}
+        },
+        {
+        	"path" : "pages/erkaiPages/MDlogin",
+        	"style" : 
+        	{
+        		"navigationBarTitleText" : "",
+				"navigationStyle": "custom"
+        	}
+        },
+        {
+        	"path" : "pages/erkaiPages/MDindex",
+        	"style" : 
+        	{
+        		"navigationBarTitleText" : "",
+				"navigationStyle": "custom"
+        	}
+        },
+        {
+        	"path" : "pages/erkaiPages/MDcode",
+        	"style" : 
+        	{
+        		"navigationBarTitleText" : "门店码"
+        	}
+        },
+        {
+        	"path" : "pages/erkaiPages/MDsc",
+        	"style" : 
+        	{
+        		"navigationBarTitleText" : "送车上门"
+        	}
+        },
+        {
+        	"path" : "pages/erkaiPages/MDorderXQ",
+        	"style" : 
+        	{
+        		"navigationBarTitleText" : "详情"
+        	}
+        },
+        {
+        	"path" : "pages/erkaiPages/MDtixianJL",
+        	"style" : 
+        	{
+        		"navigationBarTitleText" : "提现记录"
+        	}
+        },
+        {
+        	"path" : "pages/erkaiPages/MDcheliang",
+        	"style" : 
+        	{
+        		"navigationBarTitleText" : "",
+				"navigationStyle": "custom"
+        	}
+        },
+        {
+        	"path" : "pages/erkaiPages/MDallc",
+        	"style" : 
+        	{
+        		"navigationBarTitleText" : "新增车型"
+        	}
+        },
+        {
+        	"path" : "pages/erkaiPages/MDguanli",
+        	"style" : 
+        	{
+        		"navigationBarTitleText" : "",
+				"navigationStyle": "custom"
+        	}
+        },
+        {
+        	"path" : "pages/erkaiPages/MDhuanche",
+        	"style" : 
+        	{
+        		"navigationBarTitleText" : "立即还车"
+        	}
+        },
+        {
+        	"path" : "pages/erkaiPages/Mxi",
+        	"style" : 
+        	{
+        		"navigationBarTitleText" : "收益明细"
+        	}
+        },
+        {
+        	"path" : "pages/login/ZL",
+        	"style" : 
+        	{
+        		"navigationBarTitleText" : "租赁协议"
+        	}
+        }
+    ],
+	"tabBar": {
+		"selectedColor": "#EA9635",
+		"color": "#ccc",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath":"static/index1.png",
+				"selectedIconPath":"static/index2.png"
+			},
+			{
+				"pagePath": "pages/index/order",
+				"text": "订单",
+				"iconPath": "static/order1.png",
+				"selectedIconPath": "static/order2.png"
+			},
+			{
+				"pagePath": "pages/index/word",
+				"text": "我的",
+				"iconPath": "static/word1.png",
+				"selectedIconPath":"static/word2.png"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "电车租赁",
+		"navigationBarBackgroundColor": "#ffffff",
+		"backgroundColor": "#F8F8F8",
+		"app-plus": {
+			"background": "#efeff4"
+		}
+	}
+}

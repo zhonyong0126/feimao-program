@@ -1,0 +1,20 @@
+{
+    "id": "piaoyi-cityPicker",
+    "name": " data-cityPicker省市区地址选择器",
+    "displayName": " data-cityPicker省市区地址选择器",
+    "version": "1.0.6",
+    "description": "常用省市区选择器，可反选，自定义模态框、弹框",
+    "keywords": [
+        "省市区",
+        "动画",
+        "选择器",
+        "可反选",
+        "自定义模态框和弹框"
+    ],
+    "dcloudext": {
+        "category": [
+            "前端组件",
+            "通用组件"
+        ]
+    }
+}

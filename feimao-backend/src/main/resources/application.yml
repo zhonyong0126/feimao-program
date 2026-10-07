@@ -1,0 +1,136 @@
+server:
+  port: 8080
+  forward-headers-strategy: framework
+  servlet:
+    context-path: /
+
+spring:
+  application:
+    name: feimao-backend
+  
+  datasource:
+    url: ${DATABASE_URL:jdbc:mysql://127.0.0.1:3306/axcx?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true&tinyInt1isBit=false}
+    username: ${DATABASE_USERNAME:axcx}
+    # 不在代码中保存真实密码；启动时必须由环境变量提供。
+    password: ${DATABASE_PASSWORD}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      initial-size: 5
+      min-idle: 5
+      max-active: 20
+      max-wait: 60000
+      validation-query: SELECT 1
+      connection-init-sqls: SET NAMES utf8mb4
+  
+  redis:
+    host: ${REDIS_HOST:127.0.0.1}
+    port: ${REDIS_PORT:6379}
+    password: ${REDIS_PASSWORD:}
+    database: ${REDIS_DATABASE:0}
+    timeout: 10000
+  
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+
+  mail:
+    host: ${BUSINESS_MAIL_HOST:}
+    port: ${BUSINESS_MAIL_PORT:465}
+    username: ${BUSINESS_MAIL_USERNAME:}
+    password: ${BUSINESS_MAIL_PASSWORD:}
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.ssl.enable: ${BUSINESS_MAIL_SSL:true}
+  
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+  freemarker:
+    suffix: .ftl
+    template-loader-path: classpath:/templates/admin
+    charset: UTF-8
+    settings:
+      number_format: '0.##'
+      date_format: 'yyyy-MM-dd'
+      time_format: 'HH:mm:ss'
+      datetime_format: 'yyyy-MM-dd HH:mm:ss'
+    view-prefix: /templates/admin/
+    view-suffix: .html
+
+  web:
+    resources:
+      static-locations: classpath:/static/
+
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.feimao.entity
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: auto
+      logic-delete-field: deleted
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+
+knife4j:
+  enable: true
+  setting:
+    language: zh-CN
+
+jwt:
+  secret: ${JWT_SECRET:}
+  expiration: ${JWT_EXPIRATION_MS:604800000}
+  header: Authorization
+  prefix: Bearer 
+
+business:
+  admin:
+    captcha-enabled: ${ADMIN_CAPTCHA_ENABLED:false}
+  wechat:
+    app-id: ${WECHAT_APP_ID:}
+    secret: ${WECHAT_APP_SECRET:}
+    code-env-version: ${WECHAT_CODE_ENV_VERSION:release}
+    code-retry-delay-ms: ${WECHAT_CODE_RETRY_DELAY_MS:600000}
+  wechat-pay:
+    merchant-id: ${WECHAT_PAY_MCH_ID:}
+    api-key: ${WECHAT_PAY_API_KEY:}
+    notify-base-url: ${WECHAT_PAY_NOTIFY_BASE_URL:}
+    cert-path: ${WECHAT_PAY_CERT_PATH:}
+    serial-no: ${WECHAT_PAY_SERIAL_NO:}
+    private-key-path: ${WECHAT_PAY_PRIVATE_KEY_PATH:}
+  insurance:
+    insure-url: ${BUSINESS_INSURANCE_INSURE_URL:}
+    query-url: ${BUSINESS_INSURANCE_QUERY_URL:}
+    cancel-url: ${BUSINESS_INSURANCE_CANCEL_URL:}
+    token: ${BUSINESS_INSURANCE_TOKEN:}
+    product-code: ${BUSINESS_INSURANCE_PRODUCT_CODE:}
+    applicant-name: ${BUSINESS_INSURANCE_APPLICANT_NAME:}
+    applicant-num: ${BUSINESS_INSURANCE_APPLICANT_NUM:}
+    address: ${BUSINESS_INSURANCE_ADDRESS:}
+    link-man: ${BUSINESS_INSURANCE_LINK_MAN:}
+    link-mobile: ${BUSINESS_INSURANCE_LINK_MOBILE:}
+    probe-user-name: ${BUSINESS_INSURANCE_PROBE_USER_NAME:}
+    probe-cert-no: ${BUSINESS_INSURANCE_PROBE_CERT_NO:}
+    probe-mobile: ${BUSINESS_INSURANCE_PROBE_MOBILE:}
+    probe-unlock-time: ${BUSINESS_INSURANCE_PROBE_UNLOCK_TIME:}
+    probe-province: ${BUSINESS_INSURANCE_PROBE_PROVINCE:}
+    probe-city: ${BUSINESS_INSURANCE_PROBE_CITY:}
+    probe-promote-id: ${BUSINESS_INSURANCE_PROBE_PROMOTE_ID:}
+    probe-order-sn: ${BUSINESS_INSURANCE_PROBE_ORDER_SN:}
+    task-delay-ms: ${BUSINESS_INSURANCE_TASK_DELAY_MS:600000}
+  sms:
+    url: ${BUSINESS_SMS_URL:https://smkjdxtzjk.market.alicloudapi.com/standard/sms/send}
+    app-code: ${BUSINESS_SMS_APP_CODE:}
+    verification-template-id: ${BUSINESS_SMS_VERIFICATION_TEMPLATE_ID:}
+    pickup-template-id: ${BUSINESS_SMS_PICKUP_TEMPLATE_ID:}
+    delivery-template-id: ${BUSINESS_SMS_DELIVERY_TEMPLATE_ID:}
+  mail-from: ${BUSINESS_MAIL_FROM:}
+  upload-dir: ${BUSINESS_UPLOAD_DIR:./uploads}
+
+logging:
+  level:
+    com.feimao: ${BUSINESS_LOG_LEVEL:info}

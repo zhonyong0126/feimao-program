@@ -1,0 +1,2 @@
+ALTER TABLE fm_driver
+    MODIFY COLUMN mobile VARCHAR(20) NULL;

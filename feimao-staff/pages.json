@@ -1,0 +1,84 @@
+{
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "飞猫调度"
+      }
+    },
+    {
+      "path": "pages/order/list",
+      "style": {
+        "navigationBarTitleText": "订单管理"
+      }
+    },
+    {
+      "path": "pages/order/create",
+      "style": {
+        "navigationBarTitleText": "创建订单"
+      }
+    },
+    {
+      "path": "pages/order/detail",
+      "style": {
+        "navigationBarTitleText": "订单详情"
+      }
+    },
+    {
+      "path": "pages/order/dispatch",
+      "style": {
+        "navigationBarTitleText": "派单"
+      }
+    },
+    {
+      "path": "pages/customer/list",
+      "style": {
+        "navigationBarTitleText": "客户管理"
+      }
+    },
+    {
+      "path": "pages/driver/list",
+      "style": {
+        "navigationBarTitleText": "司机列表"
+      }
+    },
+    {
+      "path": "pages/my/index",
+      "style": {
+        "navigationBarTitleText": "个人中心"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "飞猫调度",
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundColor": "#f5f5f5"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#1890ff",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/images/tab-home.png",
+        "selectedIconPath": "static/images/tab-home-active.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/order/list",
+        "iconPath": "static/images/tab-order.png",
+        "selectedIconPath": "static/images/tab-order-active.png",
+        "text": "订单"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "iconPath": "static/images/tab-my.png",
+        "selectedIconPath": "static/images/tab-my-active.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

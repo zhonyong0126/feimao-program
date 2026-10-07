@@ -1,0 +1,37 @@
+# macOS / IDE
+.DS_Store
+.idea/
+*.iml
+
+# Java / Maven build output
+**/target/
+*.class
+*.jar
+
+# Frontend dependencies and generated packages
+**/node_modules/
+**/unpackage/
+**/dist/
+
+# Runtime data
+**/uploads/
+**/logs/
+*.log
+*.dump
+*.dumpstream
+
+# Environment files and credentials (examples remain tracked)
+.env
+**/.env
+**/.env.local
+**/.env.production
+*.pem
+*.key
+*.p12
+*.pfx
+apiclient_cert.*
+
+# Database exports containing production or personal data
+database/backups/
+database/legacy-axcx.sql
+
